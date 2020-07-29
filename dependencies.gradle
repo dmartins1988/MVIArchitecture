@@ -18,7 +18,7 @@ ext {
     def espresso_core = '3.2.0'
     def hilt_version = "2.28-alpha"
     def hilt_extensions_version = "1.0.0-alpha01"
-
+    def roomVersion = "2.2.5"
 
     deps = [
             kotlin                  :   "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
@@ -44,12 +44,16 @@ ext {
             courotinesCore          :   "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version",
             coroutines              :   "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version",
             hiltDagger              :   "com.google.dagger:hilt-android:$hilt_version",
-            hiltLifeCicle           :   "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_extensions_version"
+            hiltLifeCicle           :   "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_extensions_version",
+
+            roomRunTime             :   "androidx.room:room-runtime:$roomVersion",
+            roomKtx                 :   "androidx.room:room-ktx:$roomVersion",
     ]
 
     kaptDependencies = [
             hiltAndroidCompiler     :   "com.google.dagger:hilt-android-compiler:$hilt_version",
-            hiltCompiler            :   "androidx.hilt:hilt-compiler:$hilt_extensions_version"
+            hiltCompiler            :   "androidx.hilt:hilt-compiler:$hilt_extensions_version",
+            roomRuntime             :   "androidx.room:room-compiler:$roomVersion"
     ]
 
 

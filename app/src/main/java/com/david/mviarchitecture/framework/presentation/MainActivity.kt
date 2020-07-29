@@ -1,8 +1,9 @@
-package com.david.mviarchitecture
+package com.david.mviarchitecture.framework.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.david.mviarchitecture.ui.main.MainFragment
+import com.david.mviarchitecture.R
+import com.david.mviarchitecture.framework.presentation.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

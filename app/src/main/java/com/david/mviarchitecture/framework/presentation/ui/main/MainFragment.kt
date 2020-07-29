@@ -1,4 +1,4 @@
-package com.david.mviarchitecture.ui.main
+package com.david.mviarchitecture.framework.presentation.ui.main
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
