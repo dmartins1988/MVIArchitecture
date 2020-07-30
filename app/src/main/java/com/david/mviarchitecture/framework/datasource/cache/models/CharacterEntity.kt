@@ -9,15 +9,12 @@ class CharacterEntity(
 
     @PrimaryKey(autoGenerate = false)
     @ColumnInfo(name = "character_id")
-    var id: Int,
+    var id: Int?,
 
     @ColumnInfo(name = "name")
-    var name: String,
+    var name: String?,
 
     @ColumnInfo(name = "nickname")
-    var nickname: String,
-
-    @ColumnInfo(name = "occupation")
-    var occupation: String
+    var nickname: String?
 
 )

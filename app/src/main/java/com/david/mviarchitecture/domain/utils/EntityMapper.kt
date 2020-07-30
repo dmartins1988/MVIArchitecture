@@ -4,5 +4,5 @@ interface EntityMapper<Entity, DomainModel> {
 
     fun mapToEntity(domainModel: DomainModel) : Entity
 
-    fun ampToDomain(entity: Entity) : DomainModel
+    fun mapToDomain(entity: Entity) : DomainModel
 }
